@@ -1,0 +1,21 @@
+import java util.*;
+public class DicePair{
+	private Die die1;
+	private Die die2;
+
+
+	public int roll(){
+
+		die1 = new Die();
+		die2 = new Die();
+
+		int firstRoll = die1.roll();
+		int secondRoll = die2.roll();
+
+		int out = firstRoll + secondRoll;
+
+		return out;
+
+
+	}
+}
